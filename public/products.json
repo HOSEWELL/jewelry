@@ -1,0 +1,66 @@
+[
+    {
+        "id": 1,
+        "picture": "https://media.istockphoto.com/id/2009712934/photo/necklaces-and-pendants.webp?b=1&s=170667a&w=0&k=20&c=NO-CLHKgf32fjzh3Hgw-VFnotkqgYjgLAYo35Jj-F4Y=",
+        "price": "$ 150",
+        "description": "Diamond Delight: This unique ring features a sparkling diamond surrounded by a halo of smaller stones, creating a dazzling and eye-catching design."
+    },
+    {
+        "id": 2,
+        "picture": "https://media.istockphoto.com/id/1583171571/photo/ear-piercings-photos-helix-piercing-ear-rings.webp?b=1&s=170667a&w=0&k=20&c=wpXz9-xBS6x4BXnGzZjbBdZaTPn-fJMb7H6badMTbLw=",
+        "price": "$200",
+        "description": "Bangle Brilliance: This elegant gold bangle bracelet features a sleek and modern design, adding a touch of sophistication to any outfit."
+    },
+    {
+        "id": 3,
+        "picture":  "https://media.istockphoto.com/id/155013169/photo/jewelry-on-window-display.webp?b=1&s=170667a&w=0&k=20&c=xKcK-n8xkLPlwuhxo4Y3jtHy8qrhmTVU7h0V7hzyJUc=",
+        "price": "$250",
+        "description": "Dazzle with Diamonds: These stunning earrings are crafted with exquisite 14k white gold and adorned with sparkling diamonds. A perfect blend of elegance and glamour."
+    },
+  
+    {
+        "id": 4,
+        "picture": "https://media.istockphoto.com/id/1091800452/photo/womans-hand-holding-antique-locket-with-photos-of-children-and-pet-dog-inside.webp?b=1&s=170667a&w=0&k=20&c=qX-8OpDvj8Kt0rhB7R65y57jHm3VeXK10LacMDEyqRQ=",
+        "price": "$250",
+        "description": "Sentimental Charm: This antique-inspired locket necklace holds cherished memories close to your heart. A unique and meaningful piece."
+    },
+  
+    {
+        "id": 5,
+        "picture": "https://media.istockphoto.com/id/1939963963/photo/gold-bracelet.webp?b=1&s=170667a&w=0&k=20&c=iOEybwFVndO7Xbxdhw4fWG8DCAsg5mYVPNzB0vqDs38=",
+        "price": "$300",
+        "description": "Charm and Elegance: This exquisite charm features a radiant diamond set in a delicate 18k gold frame. A timeless piece that adds a touch of sophistication."
+    },
+    {
+        "id": 6,
+        "picture": "https://media.istockphoto.com/id/1434780772/photo/necklaces-accumulation-on-a-woman-neck.webp?b=1&s=170667a&w=0&k=20&c=KhNn3dOouS2fHPhS2SgcT1lW6YpjlzjtykvK_0AqQaE=",
+        "price": "$100",
+        "description": "Golden Elegance: This classic gold necklace features a delicate chain and a shimmering pendant, perfect for everyday wear or special occasions."
+    },
+    {
+        "id": 7,
+        "picture": "https://media.istockphoto.com/id/1389474559/photo/solitaire-diamond-necklace.webp?b=1&s=170667a&w=0&k=20&c=AgjB2xBWwRhhjOwofD36hfUyoj0ik5pI4OIIy2ezmOI=",
+        "price": "$250",
+        "description": "Solitaire Sparkle: This classic solitaire diamond necklace is a timeless piece that exudes elegance and sophistication."
+    },
+  
+    {
+        "id": 8,
+        "picture": "https://media.istockphoto.com/id/1455004865/photo/elegant-jewelry-set-jewellery-set-with-gemstones-jewelry-accessories-collage-product-still.webp?b=1&s=170667a&w=0&k=20&c=rNHOVhSxC-yxkh8yuFpP6w5qOY9Nenys48wQqqvYQ7E=",
+        "price":"$ 250",
+        "description": "Earring Enchantment: These stunning drop earrings feature shimmering gemstones and delicate gold accents, making a bold statement wherever you go."
+    },
+    {
+        "id": 9,
+        "picture": "https://media.istockphoto.com/id/1491130656/photo/platinum-and-gold-ring-with-square-diamonds-floating-on-white-background-from-design-with-3d.webp?b=1&s=170667a&w=0&k=20&c=Lz0KTL5d-26n7cWP4Bx40DCfTCoFnv9swmhMwzV8TgE=",
+        "price": "$100",
+        "description": "A timeless treasure: This dazzling platinum and gold necklace features a captivating square diamond design, perfect for adding a touch of luxury to any outfit."
+    },
+    {
+        "id": 10,
+        "picture": "https://media.istockphoto.com/id/1733125517/photo/wedding-rings.webp?b=1&s=170667a&w=0&k=20&c=Q9aj1rB1b6dhQknq9lHeUDOlhP1Rrpf48aA-ntKzqrY=",
+        "price": "$ 150",
+        "description": "Modern Elegance: This unique 14k gold ring showcases a sparkling diamond centerpiece, making a bold statement for any occasion."
+    }
+    
+]

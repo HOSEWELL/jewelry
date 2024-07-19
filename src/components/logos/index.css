@@ -1,0 +1,17 @@
+.logos{
+    margin-top: 0px;    
+    display: flex;
+    justify-content: space-around;
+    justify-items: center;
+}
+.logos img{
+    width: 60px;
+    border-radius: 50%;
+    justify-content: center;
+    display: flex;
+    margin-left: 30%;
+    
+}
+span{
+    color: #967f50;
+}

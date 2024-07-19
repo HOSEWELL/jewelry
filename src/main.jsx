@@ -7,8 +7,12 @@ import "bootstrap/dist/js/bootstrap.bundle.min";
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Navbar from './components/Navbar/index.jsx';
 import Home from './components/Home/index.jsx';
-import Products from './components/Products/index.jsx';
 import Footer from './components/Footer/index.jsx';
+import Logos from './components/logos/index.jsx';
+import ProductContainer from './components/products/indexcontainer.jsx';
+import ProductProfile from './components/products/productProfile.jsx';
+import Register from './components/Signing/register.jsx';
+import Login from './components/Signing/login.jsx';
 
 
 const router = createBrowserRouter([
@@ -30,13 +34,29 @@ const router = createBrowserRouter([
     element: <Home />
   },
   {
+    path: "logos",
+    element: <Logos />
+  },
+  {
     path: "/products",
-    element: <Products />
+    element: <ProductContainer />
+  },
+  {
+    path: "/productprofile",
+    element: <ProductProfile />
   },
   {
     path: "/footer",
     element: <Footer />
   },
+  {
+    path: "/register",
+    element: <Register />
+  },
+  {
+    path: "/login",
+    element: <Login/>
+  }
 
 ])
 ReactDOM.createRoot(document.getElementById('root')).render(

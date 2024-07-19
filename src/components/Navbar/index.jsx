@@ -14,14 +14,14 @@ const Navbar = () => {
       <ul className="navbar-nav me-auto mb-2 mb-lg-0">
 
         <li className="nav-item" style={{marginLeft:"20px"}}>
-         <Link style={{textDecoration:"none", color:"#967f20", fontWeight:"bold"}} to="/app" className="nav-brand">Home</Link>
+         <Link style={{textDecoration:"none", color:"#967f20", fontWeight:"bold", marginLeft:"35px"}} to="/app" className="nav-brand">Home</Link>
         </li>
         <li className="nav-item" style={{marginLeft:"20px"}}>
          <Link style={{textDecoration:"none", color:"#967f20", fontWeight:"bold"}} to="/products" className="nav-brand">Products</Link>
         </li>
        
         <li className="nav-item" style={{marginLeft:"20px"}}>
-         <Link style={{textDecoration:"none", color:"#967f20", fontWeight:"bold"}} to="/footer" className="nav-brand">About Us</Link>
+         <Link style={{textDecoration:"none", color:"#967f20", fontWeight:"bold"}} to="/about" className="nav-brand">About Us</Link>
         </li>
       
       </ul>

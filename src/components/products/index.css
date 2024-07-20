@@ -2,15 +2,18 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 30%;
-    height: 100%;
+    /* width: 30%; */
+    max-width: 30%;
+    height: 500px;
+    
     margin: 20px;
     flex-wrap: wrap;
 }
 .card-img-top{
-    width: 40%;
-    height: 30%;
-}.product-heading{
+    height: 400px;
+    /* max-height: 20%; */
+}
+.product-heading{
     color: red;
     font-weight: bold;
     text-align: center;
@@ -26,16 +29,84 @@
 
 .btn {
     padding: 1.1em 2em;
-    background: none;
-    border: 2px solid #fff;
     font-size: 15px;
-    color: #e01212;
     cursor: pointer;
-    position: relative;
-    overflow: hidden;
-    transition: all 0.3s;
     border-radius: 12px;
-    background-color: #ecd448;
     font-weight: bolder;
-    box-shadow: 0 2px 0 2px #000;
+  
    }
+
+  .cart {
+   position: fixed;
+   right: -100%;
+   top: 0;
+   width: 400px;
+   height: 100%;
+   background-color: black;
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+   padding: 20px;
+   color: white;
+   overflow-y: scroll;
+   display: flex;
+   flex-direction: column;
+   z-index: 1;
+ }
+  
+  .cart-items {
+    flex: 1;
+    overflow-y: scroll;
+  }
+  
+  .cart-heading {
+    font-size: 1.5rem;
+    color: white;
+    margin-bottom: 10px;
+  }
+  
+  .cart-item {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+  }
+  
+  .cart-item img {
+    max-width: 100px;
+    margin-right: 10px;
+  }
+  
+  .cart-item-name {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+  .cart-item-price {
+    font-size: 1rem;
+    color: white;
+    margin-left: auto;
+  }
+  .close-btn {
+    background-color: transparent;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-left: auto;
+  }
+  
+  .close-btn:hover {
+    text-decoration: underline;
+  }
+  
+  
+  @media (max-width: 768px) {
+    .products {
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .card-img-top {
+      height: 150px;
+    }
+  }
+  

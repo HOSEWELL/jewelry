@@ -36,7 +36,9 @@ const Navbar = () => {
       </form>
       
       <form className="d-flex" role="search">
+      <Link to="/register">
       <i style={{backgroundColor:"#967f20", padding:"10px", color:"white", borderRadius:"60px", marginLeft:"20px"}} class="fa-solid fa-user"></i>
+      </Link>
       </form>
 
 

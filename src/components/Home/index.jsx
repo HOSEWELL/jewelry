@@ -18,7 +18,7 @@ const Home=()=>{
                 </span>
                 <br />
                 <br /><br />
-                <Link to="/products"><button className="success"> All products </button></Link>
+                <Link to="/products"><button style={{color:"brown"}} className="success"> All products </button></Link>
             </div>
             <div className="images" style={{width:"50%", display:"flex", padding:"40px 0px 0px 0px"}}>
                 <img style={{width:"50%", borderRadius:"0px 0px 55px 55px ", height:"70%", marginRight:"20px"}} src="https://images.unsplash.com/photo-1601821765780-754fa98637c1?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGpld2Vscnl8ZW58MHx8MHx8fDA%3D" alt="" />

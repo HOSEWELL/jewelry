@@ -8,6 +8,7 @@ import { initializeApp } from "firebase/app";
 const firebaseConfig = {
   apiKey: "AIzaSyDZ0NyWFHY9P-u8tH0BcUEvQ_566jSGWKM",
   authDomain: "jewerly-139e8.firebaseapp.com",
+  databaseURL: "https://jewerly-139e8-default-rtdb.europe-west1.firebasedatabase.app",
   projectId: "jewerly-139e8",
   storageBucket: "jewerly-139e8.appspot.com",
   messagingSenderId: "1001585811742",

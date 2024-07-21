@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 
 
+
+
 const ProductCard = ({ product, addToCart }) => {
   const handleAddToCart = () => {
     addToCart(product); // Call addToCart function passed from parent component
@@ -14,7 +16,7 @@ const ProductCard = ({ product, addToCart }) => {
       <div>
         <h5>{product.price}</h5>
         <p>{product.description}</p>
-        <button type="button" className="btn btn-primary" onClick={handleAddToCart}> Add to cart </button>
+        <button type="button" className="btn btn-primary" onClick={handleAddToCart} id="close"> Add to cart </button>
       </div>
     </div>
 

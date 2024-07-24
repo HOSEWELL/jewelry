@@ -25,11 +25,6 @@ const Navbar = () => {
         </li>
       
       </ul>
-      
-
-      <form className="d-flex" role="search">
-        <input className="form-control me-2" type="search" placeholder="Search....." aria-label="Search" style={{borderRadius:"60px"}}/>
-      </form>
 
       <form className="d-flex" role="search">
       <i style={{backgroundColor:"#967f20", padding:"10px", color:"white", borderRadius:"60px"}} class="fa-solid fa-cart-shopping"></i>

@@ -1,14 +1,12 @@
 import React, { useState, useEffect } from "react";
-import ProductCard from "./index";
+import ProductCard from "./index.jsx";
+import CartModal from "./cart.jsx";
 import "./index.css";
-import { Link } from "react-router-dom";
-
-
 
 const ProductContainer = () => {
     const [products, setProducts] = useState([]);
     const [cart, setCart] = useState([]);
-    
+    const [isCartVisible, setIsCartVisible] = useState(false);
 
     useEffect(() => {
         // Simulating fetching products from a JSON file
@@ -20,52 +18,49 @@ const ProductContainer = () => {
 
     const addToCart = (product) => {
         setCart([...cart, product]); // Add product to cart
+        setIsCartVisible(true); // Show cart modal
         console.log("Product added to cart:", product);
-        window.onload = function(){
-            document.getElementById('close').onclick = function(){
-                this.parentNode.parentNode.remove();
-                return false;
-            };
-        };
+    };
+
+    const closeCart = () => {
+        setIsCartVisible(false); // Hide cart modal
+    };
+    const removeFromCart = (index) => {
+        setCart(cart.filter((_, i) => i !== index)); // Remove product from cart
     };
 
     return (
         <>
-        
-            {/* Cart Display */}
-            <div className="cart">
-                <h2 className="cart-heading">Cart</h2>
-                <Link to="/app" state={{ cart: cart }} id="close" style={{borderRadius:"10px", backgroundColor:"blue", color:"white",textDecoration:"none",justifyContent:"center",marginLeft:"290px"   }}>close</Link>
-                
-                <ul>
-                    {cart.map((item, index) => (
-                        <li key={index} className="cart-item">
-                            
-
-                            <img src={item.picture} alt={item.name} />
-                            <span className="cart-item-price">{item.price}</span>
-                            <br />
-                            <button style={{borderRadius:"20px", backgroundColor:"blue", color:"white"}} className="cart-item-remove info" onClick={() => 
-                                setCart(cart.filter((_, i) => i !== index))}>Remove</button>
-                        </li>
-                    ))}
-                </ul>
-            </div>
+            {isCartVisible && <CartModal cart={cart} closeCart={closeCart} removeFromCart={removeFromCart} />}
 
             <div className="product-container">
-                
                 <h1 className="product-heading">Products</h1>
+                <div className="search-container">
+                    <input
+                        type="text"
+                        placeholder="Search product..."
+                        style={{borderRadius:"10px", padding:"10px"}}
+                        onChange={(e) => {
+                            const searchTerm = e.target.value;
+                            const filteredProducts = products.filter((product) =>
+                                product.title.toLowerCase().includes(searchTerm.toLowerCase())
+                            );
+                            setProducts(filteredProducts);
+                        }}
+                    />
+                </div>
                 <div className="products">
                     {products.map((product) => (
                         <ProductCard key={product.id} product={product} addToCart={addToCart} />
                     ))}
                 </div>
             </div>
-
         </>
-  );
+    );
 };
 
 export default ProductContainer;
+
+
 
 
